@@ -10,6 +10,7 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #181820;
+  --light-text-color: #ffffff;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
@@ -51,6 +52,18 @@ body {
 
 .contact-info__block--right a {
   width: 65%;
+}
+
+.contact-link {
+  position: relative;
+  display: inline-block;
+  color: var(--primary-text-color);
+}
+
+.contact-link:hover {
+  color: var(--text-decoration-color);
+  text-decoration: underline;
+  transition: all 275ms ease;
 }
 
 @media screen and (max-width: 576px) {
@@ -104,6 +117,7 @@ body {
 }
 
 .contact-info__block--center {
+    position: relative;
     justify-content: center;
     align-items: center;
 }
@@ -136,12 +150,24 @@ body {
 }
 
 .contact-info__avatar {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+    text-align: center;
+    text-transform: uppercase;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.contact-info__avatar:hover {
+  cursor: pointer;
+  animation-name: bounce;
 }
 
 /* Intro and skills styles */
@@ -209,6 +235,13 @@ body {
   margin-bottom: 8px;
 }
 
+.experiences__company-header-name:hover {
+  width: fit-content;
+  color: var(--light-text-color);
+  background-color: var(--text-decoration-color);
+  transition: all 275ms ease;
+}
+
 .experiences__company-project {
   margin-left: 15px;
   margin-bottom: 25px;
@@ -259,6 +292,13 @@ body {
   margin-bottom: 10px;
 }
 
+.additional-info__education-university-speciality:hover {
+  width: fit-content;
+  color: var(--light-text-color);
+  background-color: var(--text-decoration-color);
+  transition: all 275ms ease;
+}
+
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
 }
@@ -275,4 +315,16 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		transform:         translateY(0)
+	}
+	40% {
+		transform:         translateY(-20px)
+	}
+	60% {
+		transform:         translateY(-10px)
+	}
 }
