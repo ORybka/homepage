@@ -13,8 +13,8 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --border-color: #006eff49;
+  --text-decoration-color: #006eff;
 }
 
 .container {
@@ -49,8 +49,11 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
+.contact-info__block--right a {
+  width: 65%;
+}
 
+@media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
       flex-direction: column;
@@ -58,6 +61,11 @@ body {
 
   .contact_info_container {
       align-items: center;
+  }
+
+  .contact-info__block--right a {
+    width: 100%;
+    justify-content: center;
   }
 
   .contact-info__block:not(:last-child) {
@@ -91,10 +99,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    width: 40%;
 }
 
 .contact-info__block--center {
     justify-content: center;
+    align-items: center;
 }
 
 .contact-info__item {
