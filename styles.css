@@ -10,7 +10,7 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #181820;
-  --light-text-color: #ffffff;
+  --light-text-color: #fff;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
@@ -44,13 +44,13 @@ body {
   max-width: 900px;
 }
 
-.resume__block {
+.resume-block {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
 
-.contact-info__block--right a {
+.contact-info-block-right a {
   width: 65%;
 }
 
@@ -69,98 +69,98 @@ body {
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .contact_info_container {
-      align-items: center;
+    align-items: center;
   }
 
-  .contact-info__block--right a {
+  .contact-info-block-right a {
     width: 100%;
     justify-content: center;
   }
 
-  .contact-info__block:not(:last-child) {
-      margin-bottom: 20px;
+  .contact-info-block:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .experiences {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 
 /* Contact info styles */
 .contact-info__header,
 .contact-info__sub-header {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info__header {
-    color: var(--primary-text-color);
-    margin-bottom: 15px;
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
 }
 
 .contact-info__sub-header {
-    color: var(--secondary-text-color);
-    margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 
-.contact-info__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
 }
 
-.contact-info__block--center {
-    position: relative;
-    justify-content: center;
-    align-items: center;
+.contact-info-block--center {
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info__item {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    display: flex;
-    justify-content: start;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
 }
 
 .contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-info__item-icon-wrapper {
-    margin-right: 10px;
-    width: 20px;
-    display: flex;
-    justify-content: center;
+  margin-right: 10px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info__item-icon path {
-    fill: var(--icon-color);
+  fill: var(--icon-color);
 }
 
 .contact-info__item-icon {
-    height: 1.1428rem;
-    vertical-align: text-bottom;
+  height: 1.1428rem;
+  vertical-align: text-bottom;
 }
 
 .contact-info__avatar {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid;
-    border-color: var(--text-decoration-color);
-    text-align: center;
-    text-transform: uppercase;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: var(--text-decoration-color);
+  text-align: center;
+  text-transform: uppercase;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .contact-info__avatar:hover {
@@ -316,13 +316,19 @@ body {
 }
 
 @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		transform: translateY(0)
-	}
-	40% {
-		transform: translateY(-20px)
-	}
-	60% {
-		transform: translateY(-10px)
-	}
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
 }
