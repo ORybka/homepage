@@ -179,7 +179,7 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: center;
 }
 
 /* Experience and additonal info styles */
@@ -206,7 +206,7 @@ body {
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .experiences__company-project {
